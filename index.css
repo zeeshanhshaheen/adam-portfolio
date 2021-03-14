@@ -319,9 +319,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .nav {
   display: flex;
-  top: 30vh;
-  flex-direction: column;
-  justify-content: flex-end;
   padding: var(--gutter-normal) 0;
 }
 
@@ -398,15 +395,16 @@ body:not(.user-is-tabbing) a:focus {
 }
 .header__image {
   height: 50vh;
-/*   display: flex;
-  position: fixed;
-  align-items: right;
-  justify-content: right; */
+  display: flex;
+  top: 40vh;
+  right: 25vh;
+  position: absolute;
 }
 
 .header__text {
   position: absolute;
-  top: 5vh;
+  top: 10vh;
+  left: 10vh;
   /* transform: translateY(-50%); */
 }
 
