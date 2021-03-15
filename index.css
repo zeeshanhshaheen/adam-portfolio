@@ -17,9 +17,8 @@
 
   --content-back:  #ced2f4;
   --primary: #6a6ae2;
-  --font-primary: #000000;
-  --font-secondary: #000000; 
-  /* --font-secondary: #e5e5e6da; */
+  --font-primary: #2b2b2b;
+  --font-secondary: #2b2b2b; 
   --light-grey: #f0f0f4;
   --medium-grey: #ced2f4;
   --dark-grey: #bbbfe2;
@@ -116,7 +115,7 @@ h2::after {
   content: "";
   display: block;
   height: 2px;
-  width: 10rem;
+  /* width: 20rem; */
   background: var(--primary);
   margin: var(--gutter-small) 0;
 }
@@ -237,36 +236,6 @@ body:not(.user-is-tabbing) a:focus {
   padding-left: 1rem;
   font-family: sans-serif;
 }
-/* ------------------------- Back to Top ------------------------- */
-.back-to-top {
-  position: fixed;
-  bottom: 4rem;
-  right: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 5.5rem;
-  width: 5.5rem;
-  background-color: var(--primary);
-  border-radius: 50%;
-  z-index: 10;
-  visibility: hidden;
-  transition: all 0.4s;
-}
-.back-to-top__image {
-  justify-content: right;
-  height: 70%;
-}
-@media (max-width: 900px) {
-  .back-to-top {
-    right: 2rem;
-  }
-}
-@media (max-width: 500px) {
-  .back-to-top {
-    right: 1rem;
-  }
-}
 /* ------------------------- Navigation ------------------------- */
 .nav__menu{
   display:none
@@ -279,7 +248,7 @@ body:not(.user-is-tabbing) a:focus {
   background-color:#4141aa;
   border-radius: 0% 0% 10% 0%;
   z-index:300;
-  box-shadow:0 1rem 3rem #4141aa;
+  box-shadow:0 1rem 3rem #f8c18de3;
   cursor:pointer;
 }
 .nav__splash{
@@ -287,7 +256,7 @@ body:not(.user-is-tabbing) a:focus {
   height:7vh;
   width:7vh;
   border-radius:5%;
-  background: linear-gradient(90deg, #ed995a, #f8c18d);
+  background: linear-gradient(90deg, #f8c18de3, #bbbfe200);
   
   z-index:100;
   transition:all 1.2s cubic-bezier(.86,0,.07,1);
@@ -367,7 +336,7 @@ body:not(.user-is-tabbing) a:focus {
   display:inline-block;
   width:3vh;
   height:0.2vh;
-  background-color:#f0f0f4;
+  background-color:#f8c18de3;
 }
 .nav__icon:after,
 .nav__icon:before{
@@ -402,7 +371,7 @@ body:not(.user-is-tabbing) a:focus {
 
 /* ------------------------- Header ------------------------- */
 .header {
-  background: linear-gradient(rgba(194, 71, 71, 0.1), rgb(255, 255, 255))/* ,url("./public/header.png") */;
+  background: linear-gradient(#ced2f4, #bbbfe2)/* ,url("./public/header.png") */;
   display: flex;
   height: 100vh;
   background-size: cover;
@@ -440,11 +409,11 @@ body:not(.user-is-tabbing) a:focus {
 /* ------------------------- Work ------------------------- */
 .work__box {
   display: flex;
-  align-items: center;
+
 }
 @media (max-width: 900px) {
   .work__box {
-    align-items: initial;
+
     flex-direction: column-reverse;
   }
 }
@@ -461,7 +430,7 @@ body:not(.user-is-tabbing) a:focus {
   align-items: center;
 }
 .work__text {
-  flex: 0 0 30%;
+  flex: 0 0 25%;
 }
 .work__list {
   list-style-position: inside;
@@ -493,8 +462,14 @@ body:not(.user-is-tabbing) a:focus {
 /* ------------------------- About ------------------------- */
 .about__content {
   display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  /* align-items:flex-start; */
+  justify-content: space-evenly;
+  width: 60vw;
+}
+
+.about__photo {
+  border-radius: 50%;
+  width: 25vw;
 }
 @media (max-width: 900px) {
   .about__content {
@@ -511,7 +486,7 @@ body:not(.user-is-tabbing) a:focus {
   }
   .about__photo-container {
     flex: 1;
-    margin: 0 var(--gutter-huge) 0 0;
+    /* margin: 0 var(--gutter-huge) 0 0;  */
   }
 }
 /* ------------------------- Languages ------------------------- */
@@ -538,12 +513,14 @@ body:not(.user-is-tabbing) a:focus {
 
 /* ------------------------- Footer ------------------------- */
 .footer {
-  text-align: center;
+  /* text-align: center; */
   padding: var(--gutter-medium) 0 var(--gutter-normal);
 }
 .footer__social-links {
   display: flex;
-  justify-content: center;
+  color: #4141aa;
+  fill: #4141aa;
+  /* justify-content: center; */
   padding: var(--gutter-normal) 0;
   list-style: none;
 }
@@ -565,5 +542,36 @@ body:not(.user-is-tabbing) a:focus {
 @media (max-width: 500px) {
   .footer {
     padding: var(--gutter-medium) 0;
+  }
+}
+/* ------------------------- Back to Top ------------------------- */
+.back-to-top {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5.5rem;
+  width: 5.5rem;
+  background-color: var(--dark-purple);
+  border-radius: 50%;
+  z-index: 10;
+  visibility: hidden;
+  transition: all 0.4s;
+  box-shadow:0 1rem 3rem #f8c18de3;
+}
+.back-to-top__image {
+  justify-content: right;
+  height: 70%;
+}
+@media (max-width: 900px) {
+  .back-to-top {
+    right: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .back-to-top {
+    right: 1rem;
   }
 }
