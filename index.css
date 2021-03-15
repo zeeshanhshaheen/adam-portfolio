@@ -321,8 +321,6 @@ body:not(.user-is-tabbing) a:focus {
 
 .navigation__button{
   position:fixed;
-  top:5vh;
-  left:5vw;
   height:7rem;
   width:7rem;
   text-align:center;
@@ -359,22 +357,18 @@ body:not(.user-is-tabbing) a:focus {
   transition:all .8s cubic-bezier(.68,-.55,.01,1)
 }
 .navigation__list{
-  position:absolute;
-  top: 10vh;
-  left: 10vh;
+  display: flex;
+  /* position:absolute; */
+  justify-content: space-between;
   text-align:left;
-  width:100%;
   list-style:none
 }
 /* ---------- Backetball size ---------- */
 .navigation__checkbox:checked~.navigation__background{
-  transform:scale(10);
   max-height:1vh;
   width:100vw;
 }
 .navigation__checkbox:checked~.navigation__nav{
-  width: 20vw;
-  height: 20vh;
   visibility:visible;
   opacity:1
 }
