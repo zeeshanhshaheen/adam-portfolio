@@ -10,12 +10,12 @@
   --font-size-medium-1: 3.6rem;
   --font-size-large: 5.5rem;
   --font-size-huge: 7.5rem;
-  --font-stack: "Titillium", sans-serif;
+  --font-stack: "Lora", sans-serif;
 
   --line-height-normal: 1.7;
   --line-height-small: 1.2;
 
-  --content-back:  #ced2f4;
+  --content-back:  #f0f0f4;
   --primary: #6a6ae2;
   --font-primary: #2b2b2b;
   --font-secondary: #2b2b2b; 
@@ -92,7 +92,8 @@ img {
 h1,
 h2,
 h3 {
-  font-family: "Titillium", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -.15rem;
   font-weight: 400;
   line-height: var(--line-height-small);
   color: var(--font-primary);
@@ -146,7 +147,8 @@ p {
 a {
   color: var(--font-primary);
   font-weight: 400;
-  font-family: "Titillium", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -.15rem;
   transition: all 0.2s;
   outline: 2px solid transparent;
 }
@@ -245,7 +247,7 @@ body:not(.user-is-tabbing) a:focus {
   height:7vh;
   width:7vh;
   text-align:center;
-  background-color:#4141aa;
+  background-color:#bbbfe2;
   border-radius: 0% 0% 10% 0%;
   z-index:300;
   box-shadow:0 1rem 3rem #f8c18de3;
@@ -256,10 +258,10 @@ body:not(.user-is-tabbing) a:focus {
   height:7vh;
   width:7vh;
   border-radius:5%;
-  background: linear-gradient(90deg, #f8c18de3, #bbbfe200);
+  background: linear-gradient(90deg, #f8c18def, #bbbfe200);
   
   z-index:100;
-  transition:all 1.2s cubic-bezier(.86,0,.07,1);
+  transition:all 0.8s cubic-bezier(.86,0,.07,1);
 }
 .nav__container{
   position:fixed;
@@ -371,7 +373,7 @@ body:not(.user-is-tabbing) a:focus {
 
 /* ------------------------- Header ------------------------- */
 .header {
-  background: linear-gradient(#ced2f4, #bbbfe2)/* ,url("./public/header.png") */;
+  background: linear-gradient(#f0f0f4, #bbbfe2)/* ,url("./public/header.png") */;
   display: flex;
   height: 100vh;
   background-size: cover;
@@ -395,7 +397,8 @@ body:not(.user-is-tabbing) a:focus {
 .header__text p {
   margin: 1.5rem 0 3.5rem;
   max-width: 30vw;
-  font-family: "Titillium", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: -.15rem;
   font-size: var(--font-size-medium);
 }
 @media (max-width: 500px) {
@@ -518,8 +521,8 @@ body:not(.user-is-tabbing) a:focus {
 }
 .footer__social-links {
   display: flex;
-  color: #4141aa;
-  fill: #4141aa;
+  color: #bbbfe2;
+  fill: #bbbfe2;
   /* justify-content: center; */
   padding: var(--gutter-normal) 0;
   list-style: none;
@@ -554,7 +557,7 @@ body:not(.user-is-tabbing) a:focus {
   align-items: center;
   height: 5.5rem;
   width: 5.5rem;
-  background-color: var(--dark-purple);
+  background-color: #f8c18de3;
   border-radius: 50%;
   z-index: 10;
   visibility: hidden;
