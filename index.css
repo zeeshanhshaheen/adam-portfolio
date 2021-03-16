@@ -16,7 +16,7 @@
   --line-height-small: 1.2;
 
   --content-back:  #f0f0f4;
-  --primary: #6a6ae2;
+  --primary: #4141aa;
   --font-primary: #2b2b2b;
   --font-secondary: #2b2b2b; 
   --light-grey: #f0f0f4;
@@ -93,7 +93,7 @@ h1,
 h2,
 h3 {
   font-family: "Montserrat", sans-serif;
-  letter-spacing: -.15rem;
+  letter-spacing: -.45rem;
   font-weight: 400;
   line-height: var(--line-height-small);
   color: var(--font-primary);
@@ -157,14 +157,11 @@ a {
 }
 button:focus,
 a:focus {
-  outline: 2px solid var(--primary);
+  outline: 2px solid #6a6ae2;
 }
 body:not(.user-is-tabbing) button:focus,
 body:not(.user-is-tabbing) a:focus {
   outline: none;
-}
-.link:hover {
-  color: var(--primary);
 }
 .btn {
   position: relative;
@@ -172,7 +169,7 @@ body:not(.user-is-tabbing) a:focus {
   padding: 1rem 4.2rem;
   text-decoration: none;
   color: inherit;
-  border: 1px solid var(--primary);
+  border: 1px solid #6a6ae2;
   font-weight: 400;
 }
 .btn:focus {
@@ -193,10 +190,10 @@ body:not(.user-is-tabbing) a:focus {
 .btn:hover::after,
 .btn:focus::after {
   right: 0;
-  background: var(--primary);
+  background: #6a6ae2da;
 }
 .btn--primary {
-  background: var(--primary);
+  background: #6a6ae2d0;
   transition: all 0.2s;
 }
 .btn--primary::after {
@@ -232,7 +229,7 @@ body:not(.user-is-tabbing) a:focus {
 .link__text:hover::after,
 .link__text:focus:after {
   right: 0;
-  background: var(--primary);
+  background: #6a6ae2d8;
 }
 .link__text span {
   padding-left: 1rem;
@@ -247,19 +244,18 @@ body:not(.user-is-tabbing) a:focus {
   height:7vh;
   width:7vh;
   text-align:center;
-  background-color:#bbbfe2;
+  background-color:#bbbfe200;
   border-radius: 0% 0% 10% 0%;
   z-index:300;
-  box-shadow:0 1rem 3rem #f8c18de3;
+  /* box-shadow:0 1rem 3rem #f8c18de3; */
   cursor:pointer;
 }
 .nav__splash{
   position:fixed;
   height:7vh;
   width:7vh;
-  border-radius:5%;
-  background: linear-gradient(90deg, #f8c18def, #bbbfe200);
-  
+  background: linear-gradient(90deg, #ced2f4e3, #f0f0f493);
+  visibility: hidden;
   z-index:100;
   transition:all 0.8s cubic-bezier(.86,0,.07,1);
 }
@@ -322,6 +318,7 @@ body:not(.user-is-tabbing) a:focus {
   max-height:7vh;
   width:100vw;
   border-radius:5%;
+  visibility: visible;
 }
 .nav__menu:checked~.nav__container{
   visibility:visible;
@@ -336,9 +333,9 @@ body:not(.user-is-tabbing) a:focus {
 .nav__icon:after,
 .nav__icon:before{
   display:inline-block;
-  width:3vh;
-  height:0.2vh;
-  background-color:#f8c18de3;
+  width:4vh;
+  height:0.3vh;
+  background-color:#4141aa;
 }
 .nav__icon:after,
 .nav__icon:before{
@@ -348,10 +345,10 @@ body:not(.user-is-tabbing) a:focus {
   transition:all .4s
 }
 .nav__icon:before{
-  top:-1rem
+  top:-1.5rem
 }
 .nav__icon:after{
-  top:1rem
+  top:1.5rem
 }
 .nav__btn:hover .nav__icon:before{
   top:-1.2rem
@@ -555,14 +552,13 @@ body:not(.user-is-tabbing) a:focus {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5.5rem;
-  width: 5.5rem;
-  background-color: #f8c18de3;
+  height: 10rem;
+  width: 10rem;
+  background-color: rgba(255, 0, 0, 0);
   border-radius: 50%;
   z-index: 10;
   visibility: hidden;
   transition: all 0.4s;
-  box-shadow:0 1rem 3rem #f8c18de3;
 }
 .back-to-top__image {
   justify-content: right;
