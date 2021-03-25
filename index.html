@@ -1,270 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./public/favicon.png" />
-    <title>Adam Tranquilla</title>
-    <meta name="description" content="Add small description of yourself." />
-    <meta
-      name="keywords"
-      content="Adam Tranquilla React typescript HTML5 CSS Node Express pSQL graphql"
-    />
-    <link rel="stylesheet" href="index.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css"
-    />
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lora&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-
-  <body>
-    <div class="navigation">
-      <input type="checkbox" class="nav__menu" id="nav-toggle" />
-      <label for="nav-toggle" class="nav__btn">
-        <span class="nav__icon" aria-label="toggle navigation menu"
-          >&nbsp;</span
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="./public/favicon.png">
+        <title>Adam Tranquilla</title>
+        <meta name="description" content="Add small description of yourself.">
+        <meta name="keywords" content="Adam Tranquilla React typescript HTML5 CSS Node Express pSQL graphql">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.10.1/devicon.min.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="navigation">
+            <input type="checkbox" class="nav__menu" id="nav-toggle">
+            <label for="nav-toggle" class="nav__btn">
+                <span class="nav__icon" aria-label="toggle navigation menu">
+                    &nbsp;
+                </span
         >
-      </label>
-      <div class="nav__splash">&nbsp;</div>
-      <nav class="nav__container" role="navigation">
-        <ul class="nav__list">
-          <li class="nav_item">
-            <a href="#work" class="nav__link">Projects</a>
-          </li>
-          <li class="nav_item">
-            <a href="#about" class="nav__link">About Me</a>
-          </li>
-          <li class="nav_item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <header class="header" role="banner" id="top">
-      <div class="header__text-box row">
-        <div class="header__text">
-          <h1 class="heading-primary">
-            <span>Adam Tranquilla</span>
-          </h1>
-          <p>A Web Developer based in Calgary, Alberta</p>
+            </label>
+            <div class="nav__splash">&nbsp;</div>
+            <nav class="nav__container" role="navigation">
+                <ul class="nav__list">
+                    <li class="nav_item">
+                        <a href="#work" class="nav__link">Projects</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#about" class="nav__link">About Me</a>
+                    </li>
+                    <li class="nav_item">
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-      </div>
-      <img
-        src="./public/header.png"
-        class="header__image"
-        alt="Hire me please"
-      />
-    </header>
-
-    <main role="main">
-      <section class="work" id="work">
-        <div class="row">
-          <h2>My Work</h2>
-          <div class="work__boxes">
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Tablewise (Work in progress)</h3>
-                <p>
-                  Tablewise is a mobile restaurant menu that allows users to
+        <header class="header" role="banner" id="top">
+            <div class="header__text-box row">
+                <div class="header__text">
+                    <h1 class="heading-primary">
+                        <span>Adam Tranquilla</span>
+                    </h1>
+                    <p>A Web Developer based in Calgary, Alberta</p>
+                </div>
+            </div>
+            <img src="./public/header.png" class="header__image" alt="Hire me please">
+        </header>
+        <main role="main">
+            <section class="work" id="work">
+                <div class="row">
+                    <h2>My Work</h2>
+                    <div class="work__boxes">
+                        <div class="work__box" data-aos="fade-in">
+                            <div class="work__text">
+                                <h3 class="heading">Tablewise (Work in progress)</h3>
+                                <p>
+                                    Tablewise is a mobile restaurant menu that allows users to
                   place and split orders based on their seat numbers. Orders can
                   be fully customized, and menus can be filtered based on
                   dietary restrictions.
-                </p>
-                <ul class="work__list">
-                  <li>React</li>
-                  <li>TypeScript</li>
-                  <li>GraphQL</li>
-                  <li>HTML5/SCSS</li>
-                  <li>Node.js/Express</li>
-                  <li>MongoDB</li>
-                  <li>socket.io</li>
-                  <li>Material UI</li>
-                  <li>Locu API</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://github.com/AdamTranquilla/tablewise"
-                    target="_blank"
-                    class="link__text"
-                  >
-                    Work In Progress <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/AdamTranquilla/tablewise"
-                    title="View Source Code"
-                    target="_blank"
-                  >
-                    <img
-                      src="./public/github.svg"
-                      class="work__code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./public/Tablewise.png"
-                  class="work__image"
-                  alt="Project 1"
-                />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Hand on Demand</h3>
-                <p>
-                  Hand on Demand is a responsive google maps based web app where
+                                </p>
+                                <ul class="work__list">
+                                    <li>React</li>
+                                    <li>TypeScript</li>
+                                    <li>GraphQL</li>
+                                    <li>HTML5/SCSS</li>
+                                    <li>Node.js/Express</li>
+                                    <li>MongoDB</li>
+                                    <li>socket.io</li>
+                                    <li>Material UI</li>
+                                    <li>Locu API</li>
+                                </ul>
+                                <div class="work__links">
+                                    <a href="https://github.com/AdamTranquilla/tablewise" target="_blank" class="link__text">
+                                        Work In Progress
+                                        <span>&rarr;</span>
+                                    </a>
+                                    <a href="https://github.com/AdamTranquilla/tablewise" title="View Source Code" target="_blank">
+                                        <img src="./public/github.svg" class="work__code" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./public/Tablewise.png" class="work__image" alt="Project 1">
+                            </div>
+                        </div>
+                        <div class="work__box" data-aos="fade-in">
+                            <div class="work__text">
+                                <h3>Hand on Demand</h3>
+                                <p>
+                                    Hand on Demand is a responsive google maps based web app where
                   users can pin help requests to the map that other users can
                   filter through, and apply to!
-                </p>
-                <ul class="work__list">
-                  <li>React</li>
-                  <li>JS</li>
-                  <li>HTML5/CSS</li>
-                  <li>Node.js/Express</li>
-                  <li>pSQL</li>
-                  <li>socket.io</li>
-                  <li>Material UI</li>
-                  <li>Google maps API</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://hand-on-demand.netlify.app/"
-                    target="_blank"
-                    class="link__text"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/AdamTranquilla/hand-on-demand"
-                    title="View Source Code"
-                    target="_blank"
-                  >
-                    <img
-                      src="./public/github.svg"
-                      class="work__code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./public/hand-on-demand.png"
-                  class="work__image"
-                  alt="Project 1"
-                />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Scheduler</h3>
-                <p>
-                  Scheduler is a responsive single page web app that allows
+                                </p>
+                                <ul class="work__list">
+                                    <li>React</li>
+                                    <li>JS</li>
+                                    <li>HTML5/CSS</li>
+                                    <li>Node.js/Express</li>
+                                    <li>pSQL</li>
+                                    <li>socket.io</li>
+                                    <li>Material UI</li>
+                                    <li>Google maps API</li>
+                                </ul>
+                                <div class="work__links">
+                                    <a href="https://hand-on-demand.netlify.app/" target="_blank" class="link__text">
+                                        Visit Site
+                                        <span>&rarr;</span>
+                                    </a>
+                                    <a href="https://github.com/AdamTranquilla/hand-on-demand" title="View Source Code" target="_blank">
+                                        <img src="./public/github.svg" class="work__code" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./public/hand-on-demand.png" class="work__image" alt="Project 1">
+                            </div>
+                        </div>
+                        <div class="work__box" data-aos="fade-in">
+                            <div class="work__text">
+                                <h3>Scheduler</h3>
+                                <p>
+                                    Scheduler is a responsive single page web app that allows
                   users to book, edit, and cancel interviews.
-                </p>
-                <ul class="work__list">
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Node</li>
-                  <li>MongoDB</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://interviewscheduler-lhl.netlify.app/"
-                    target="_blank"
-                    class="link__text"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/AdamTranquilla/scheduler"
-                    title="View Source Code"
-                    target="_blank"
-                  >
-                    <img
-                      src="./public/github.svg"
-                      class="work__code"
-                      alt="GitHub"
-                    />
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./public/scheduler.gif"
-                  class="work__image"
-                  alt="Project 2"
-                />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Tweeter</h3>
-                <p>
-                  Tweeter is a simplified single-page Twitter clone utilizing an
+                                </p>
+                                <ul class="work__list">
+                                    <li>React</li>
+                                    <li>Next.js</li>
+                                    <li>Node</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                                <div class="work__links">
+                                    <a href="https://interviewscheduler-lhl.netlify.app/" target="_blank" class="link__text">
+                                        Visit Site
+                                        <span>&rarr;</span>
+                                    </a>
+                                    <a href="https://github.com/AdamTranquilla/scheduler" title="View Source Code" target="_blank">
+                                        <img src="./public/github.svg" class="work__code" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./public/scheduler.gif" class="work__image" alt="Project 2">
+                            </div>
+                        </div>
+                        <div class="work__box" data-aos="fade-in">
+                            <div class="work__text">
+                                <h3>Tweeter</h3>
+                                <p>
+                                    Tweeter is a simplified single-page Twitter clone utilizing an
                   HTML, CSS, JS, jQuery, AJAX front-end, Node, Express, and
                   MongoDB back-end.
-                </p>
-                <ul class="work__list">
-                  <li>React</li>
-                  <li>Next.js</li>
-                  <li>Node</li>
-                  <li>MongoDB</li>
-                </ul>
-
-                <div class="work__links">
-                  <a
-                    href="https://tweettweeter.herokuapp.com/"
-                    target="_blank"
-                    class="link__text"
-                  >
-                    Visit Site <span>&rarr;</span>
-                  </a>
-                  <a
-                    href="https://github.com/AdamTranquilla/tweeter"
-                    title="View Source Code"
-                    target="_blank"
-                  >
-                    <img
-                      src="./public/github.svg"
-                      class="work__code"
-                      alt="GitHub"
-                    />
-                  </a>
+                                </p>
+                                <ul class="work__list">
+                                    <li>React</li>
+                                    <li>Next.js</li>
+                                    <li>Node</li>
+                                    <li>MongoDB</li>
+                                </ul>
+                                <div class="work__links">
+                                    <a href="https://tweettweeter.herokuapp.com/" target="_blank" class="link__text">
+                                        Visit Site
+                                        <span>&rarr;</span>
+                                    </a>
+                                    <a href="https://github.com/AdamTranquilla/tweeter" title="View Source Code" target="_blank">
+                                        <img src="./public/github.svg" class="work__code" alt="GitHub">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="work__image-box">
+                                <img src="./public/tweeter.gif" class="work__image" alt="Project 3">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="work__image-box">
-                <img
-                  src="./public/tweeter.gif"
-                  class="work__image"
-                  alt="Project 3"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- <section class="Language" id="Languages">
+            </section>
+            <!-- <section class="Language" id="Languages">
         <div class="row">
           <h2>Languages</h2>
           <div class="Language__logos">
@@ -283,79 +197,71 @@
           </div>
         </div>
       </section> -->
-
-      <section class="about" id="about">
-        <div class="row">
-          <h2>About Me</h2>
-          <div class="about__content">
-            <div class="about__photo-container">
-              <img class="about__photo" src="./public/akt95.png" alt="" />
-            </div>
-            <div class="about__text">
-              <p>
-                Hello! I'm a Junior Software Engineer with a background in
+            <section class="about" id="about">
+                <div class="row">
+                    <h2>About Me</h2>
+                    <div class="about__content">
+                        <div class="about__photo-container">
+                            <img class="about__photo" src="./public/akt95.png" alt="">
+                        </div>
+                        <div class="about__text">
+                            <p>
+                                Hello! I'm a Junior Software Engineer with a background in
                 Chemical Engineering. I enjoy working on the full-stack of
                 projects with a preference for writing logic and functionality
                 over styling. I love working in fast-paced start-up-style
                 environments with small to medium-sized teams. I'm currently
                 working on my next portfolio project and diving into Typescript
                 and GraphQL!
-              </p>
-              <a href="https://resume.creddle.io/resume/1htpwi0l54v" class="btn"
-                >My Resume</a
+                            </p>
+                            <a href="https://resume.creddle.io/resume/1htpwi0l54v" class="btn">
+                                My Resume
+                            </a
               >
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer role="contentinfo" class="footer" id="contact">
-      <div class="row">
-        <h2>Get in Touch</h2>
-        <div class="contact__info">
-          <p>
-            I'm currently open to working remotely across canada! I look forward
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer role="contentinfo" class="footer" id="contact">
+            <div class="row">
+                <h2>Let's Get in Touch</h2>
+                <div class="contact__info">
+                    <p>
+                        I'm currently open to working remotely across canada! I look forward
             to connecting with you
-          </p>
-          <a href="mailto:adamtranquilla@gmail.com" class="btn"
-            >adamtranquilla@gmail.com</a
+                    </p>
+                    <a href="mailto:adamtranquilla@gmail.com" class="btn">
+                        adamtranquilla@gmail.com
+                    </a
           >
-        </div>
-        <ul class="footer__social-links">
-          <li class="footer__social-link-item">
-            <a
-              href="https://github.com/AdamTranquilla/"
-              title="Link to Github Profile"
-            >
-              <img
-                src="./public/github.svg"
-                class="footer__social-image"
-                alt="Github"
-              />
-            </a>
-          </li>
-          <li class="footer__social-link-item">
-            <a href="https://www.linkedin.com/in/AdamTranquilla/">
-              <img
-                src="./public/linkedin.svg"
-                title="Link to Linkedin Profile"
-                class="footer__social-image"
-                alt="Linkedin"
-              />
-            </a>
-          </li>
-        </ul>
-      </div>
-    </footer>
-
-    <a href="#top" class="back-to-top" title="Back to Top">
-      <img
-        src="./public/top-tall.svg"
-        alt="Back to Top"
-        class="back-to-top__image"
-      />
-    </a>
-    <script src="./index.js"></script>
-  </body>
+                </div>
+                <ul class="footer__social-links">
+                    <li class="footer__social-link-item">
+                        <a href="https://github.com/AdamTranquilla/" title="Link to Github Profile">
+                            <img src="./public/github.svg" class="footer__social-image" alt="Github">
+                        </a>
+                    </li>
+                    <li class="footer__social-link-item">
+                        <a href="https://www.linkedin.com/in/AdamTranquilla/">
+                            <img
+                                src="./public/linkedin.svg"
+                                title="Link to Linkedin Profile"
+                                class="footer__social-image"
+                                alt="Linkedin"
+                            >
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <a href="#top" class="back-to-top" title="Back to Top">
+            <img src="./public/top-tall.svg" alt="Back to Top" class="back-to-top__image">
+        </a>
+        <script src="./index.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>
