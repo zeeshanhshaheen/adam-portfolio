@@ -343,13 +343,19 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   }
 }
 
+@media (max-width: 500px) {
+  .nav__link {
+    margin-left: 10vw
+  }
+}
+
 .nav__link {
   position: relative;
   display: inline-block;
   font-size: 3vh;
   margin-top: 0.5vh;
   height: 6.5vh;
-  margin-left: 6vw;
+  margin-left: 11vw;
   text-decoration: none;
   color: inherit;
   transition: all 0.2s;
@@ -668,6 +674,10 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   list-style: none;
 }
 
+.footer__social-link-item :hover {
+  background-color: #6a6ae2d0;
+}
+
 .footer__social-link-item:not(:last-of-type) {
   margin-right: var(--gutter-small);
 }
@@ -725,6 +735,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 @media (max-width: 500px) {
   .back-to-top {
     right: 1rem;
+    width: auto;
   }
 }
 
