@@ -118,7 +118,6 @@ body {
 
 section {
   padding: var(--gutter-huge) 0;
-  border-bottom: var(--border-light);
 }
 
 img {
@@ -139,6 +138,14 @@ h1, h2, h3 {
   line-height: 2;
   font-size: var(--font-size-huge);
   font-weight: 400;
+}
+
+@media (max-width: 500px) {
+  .heading-primary {
+    line-height: 1;
+    font-size: 10px;
+    margin-left: -5px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -521,9 +528,8 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 
 @media (max-width: 500px) {
   .work__box {
-    padding: 10px;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+    padding: 15px;
+    flex-direction: column;
     background-color: #CFD2E9;
     border-radius: 30px;
   }
@@ -534,12 +540,15 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
     width: 100%;
   }
   .work__image-box {
-    width: 200px;
-    margin-top: 100px;
+    width: 250px;
+    margin-top: 50px;
+    margin-left: 5px;
   }
   .work__box:not(:last-child) {
     margin-bottom: 20rem;
   }
+}
+
 }
 
 .work__links {
@@ -586,15 +595,23 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 
 /* ------------------------- About ------------------------- */
 
+.about {}
+
 .about__content {
+  background-color: #CFD2E9;
+  padding: 25px;
+  margin: 15px;
+  border-radius: 10px;
   display: flex;
   /* align-items:flex-start; */
-  justify-content: center
+  justify-content: space-evenly;
+  width: 60vw;
 }
 
 .about__photo {
+  margin: 20px;
   border-radius: 50%;
-  width: 300px
+  width: 20vw
 }
 
 @media (max-width: 500px) {
@@ -607,7 +624,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
     display: block;
   }
   .about__photo {
-    margin-top: 30px;
+    width: 50vw;
   }
 }
 
@@ -662,6 +679,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 /* ------------------------- Footer ------------------------- */
 
 .footer {
+  background-color: #CFD2E9;
   /* text-align: center; */
   padding: var(--gutter-medium) 0 var(--gutter-normal);
 }
