@@ -598,17 +598,16 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   background-color: #CFD2E9;
   padding: 25px;
   margin: 15px;
-  border-radius: 10px;
-  display: flex;
+  border-radius: 30px;
+  display: grid;
   /* align-items:flex-start; */
-  justify-content: space-evenly;
-  width: 60vw;
+  grid-template-columns: 1fr 2fr;
 }
 
 .about__photo {
   margin: 20px;
   border-radius: 50%;
-  width: 20vw
+  width: 15vw
 }
 
 @media (max-width: 500px) {
@@ -697,7 +696,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-link-item :hover {
-  background-color: #6a6ae2d0;
+  opacity: 1;
 }
 
 .footer__social-link-item:not(:last-of-type) {
@@ -757,7 +756,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 @media (max-width: 500px) {
   .back-to-top {
     right: 1rem;
-    width: auto;
+    width: 50%;
   }
 }
 
