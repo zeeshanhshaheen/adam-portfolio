@@ -344,18 +344,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 
 /* ------------------------- Nav Links ------------------------- */
 
-@media (max-width: 400px) {
-  .nav__item:not(:last-child) {
-    margin-right: var(--gutter-normal);
-  }
-}
-
-@media (max-width: 500px) {
-  .nav__link {
-    margin-left: 10vw;
-    font-size: 2vh
-  }
-}
+@media (max-width: 400px) {}
 
 .nav__link {
   position: relative;
@@ -389,6 +378,14 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   right: 0;
   height: 2px;
   background: var(--primary);
+}
+
+@media (max-width: 500px) {
+  .nav__link {
+    font-size: 2vh;
+    margin-right: 25px;
+    margin-top: 5px;
+  }
 }
 
 /* ------------------------- Splash ------------------------- */
@@ -540,9 +537,11 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
     width: 100%;
   }
   .work__image-box {
-    width: 250px;
+    align-items: center;
+    width: 80%;
     margin-top: 50px;
-    margin-left: 5px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .work__box:not(:last-child) {
     margin-bottom: 20rem;
@@ -672,6 +671,12 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 
 .contact__info {
   max-width: 50vw;
+}
+
+@media (max-width: 500px) {
+  .contact__info {
+    max-width: none;
+  }
 }
 
 /* ------------------------- Footer ------------------------- */
