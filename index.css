@@ -384,7 +384,6 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   .nav__link {
     font-size: 2vh;
     margin-right: 25px;
-    margin-top: 5px;
   }
 }
 
