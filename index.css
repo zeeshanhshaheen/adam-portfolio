@@ -240,11 +240,6 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   transition: all 0.2s cubic-bezier(1, 0.68, 0.16, 0.9);
 }
 
-.btn:hover::after, .btn:focus::after {
-  right: 0;
-  background: #6a6ae2da;
-}
-
 .btn--primary {
   background: #6a6ae2d0;
   transition: all 0.2s;
@@ -523,31 +518,6 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   margin-bottom: 15rem;
 }
 
-@media (max-width: 500px) {
-  .work__box {
-    padding: 15px;
-    flex-direction: column;
-    background-color: #CFD2E9;
-    border-radius: 30px;
-  }
-  .work__text {
-    font-size: small;
-  }
-  .heading {
-    width: 100%;
-  }
-  .work__image-box {
-    align-items: center;
-    width: 80%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .work__box:not(:last-child) {
-    margin-bottom: 20rem;
-  }
-}
-
 .work__links {
   display: flex;
   align-items: center;
@@ -577,6 +547,34 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   margin-bottom: var(--gutter-normal);
 }
 
+@media (max-width: 500px) {
+  .work__box {
+    padding: 15px;
+    flex-direction: column;
+    background-color: #CFD2E9;
+    border-radius: 30px;
+  }
+  .work__text {
+    font-size: small;
+  }
+  .heading {
+    width: 100%;
+  }
+  .work__image-box {
+    align-items: center;
+    width: 80%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .work__box:not(:last-child) {
+    margin-bottom: 20rem;
+  }
+  .work__code {
+    margin-left: 2px;
+  }
+}
+
 @media (min-width: 901px) {
   .work__image-box {
     flex: 1;
@@ -591,8 +589,6 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 }
 
 /* ------------------------- About ------------------------- */
-
-.about {}
 
 .about__content {
   background-color: #CFD2E9;
@@ -614,7 +610,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
   .about__content {
     display: block;
     align-items: center;
-    width: auto;
+    margin: 0;
   }
   .about__text {
     display: block;
@@ -696,7 +692,7 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
 }
 
 .footer__social-link-item :hover {
-  opacity: 1;
+  transform: scale(1.2);
 }
 
 .footer__social-link-item:not(:last-of-type) {
@@ -758,6 +754,11 @@ body:not(.user-is-tabbing) button:focus, body:not(.user-is-tabbing) a:focus {
     right: 1rem;
     width: 50%;
   }
+}
+
+.btn:hover::after, .btn:focus::after {
+  right: 0;
+  background: #6a6ae2da;
 }
 
 @media only screen and (max-width: 600px) {}
